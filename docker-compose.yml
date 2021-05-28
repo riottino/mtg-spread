@@ -30,6 +30,7 @@ services:
             - redis
             - selenium
             - composer
+        restart: unless-stopped
     mysql:
         image: 'mysql:8.0'
         ports:
